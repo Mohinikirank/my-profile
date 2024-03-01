@@ -7,19 +7,33 @@
     <link rel="shortcut icon" href="mk.png" type="image/x-icon">
     <!-- CDN Link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Google Font Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <style>
       header{
         padding: 20px;
         background-color: rgb(216, 244, 245);
+        font-family: "Roboto", sans-serif;
       }
       nav{
         margin: 10px;
+        font-family: "Roboto", sans-serif;
+
       }
       li{
         padding: 9px;
       }
+      p{
+        font-family: "Poppins", sans-serif; 
+      }
       td,th{
          padding: 15px;
+      }
+      table, tr, th, td {
+        border: 2px solid rgb(216, 186, 131);
+        border-collapse: collapse;
       }
       #resume{
         color: orange;
@@ -28,6 +42,10 @@
       .heading{
         color: cadetblue;
         font-style: italic;
+        font-family: "Roboto", sans-serif;
+      }
+      #subtitle{
+        font-family: "Roboto", sans-serif;
       }
       .header-info{
         margin-right: 40px;
@@ -48,6 +66,13 @@
         margin: 10px;
         padding: 5px; 
       }
+      #techTable{
+     width: 50%;
+     font-family: "Poppins", sans-serif;
+}
+#listSummary,#Copyright{
+font-family: "Poppins", sans-serif;
+}
     </style>
   </head>
   <body>
@@ -74,11 +99,11 @@
     </nav>
 
     <!-- Main Section -->
-  
+  <section>
       <!-- HOME Section -->
       <section id="home">
         <h2 class="heading">Professional Summary</h2>
-        <ul>
+        <ul id="listSummary">
           <li>
             Having 1 year of experience in developing Single page Web
             Application using Angular
@@ -108,7 +133,7 @@
       <!-- Technology stack section -->
       <section id="techStack">
         <h2 class="heading">Technology stack</h2>
-<table border="1">
+<table id="techTable">
 <thead>
 <tr>
 <th>Sr.no</th>
@@ -151,8 +176,8 @@
         <p><strong>Team Size:</strong> 06 <span id="project-txt"><strong>Duration:</strong><i>2021-1 <sup>st</sup>-July till <u>present</i></u> </span></p>
          <p><strong>Project Description:</strong> This project is mainly used for student management in colleges,where it helps to manage student record like<br>student registrtion,student update and to see all the list of academic activities like score card and attendance</p>
         
-         <h2> Roles and Responsibilities</h2>
-         <ul>
+         <h2 id="subtitle"> Roles and Responsibilities</h2>
+         <ul id="listSummary">
         <li>Designed and Implemented the user interface using HTML5 and CSS3 </li>
         <li>Work closely with backend developers for code integration </li>
         <li>Identifying and troubleshooting issues in front end codebase </li>
@@ -167,7 +192,7 @@
       <!-- Education Section -->
       <section id="education">
         <h2 class="heading">My Education Details</h2>
-        <table border="1">
+        <table id="techTable">
           <thead>
           <tr>
           <th>Qualification</th>
@@ -209,28 +234,28 @@
     <img src="assets/developer.png.png" alt="developer">
     <P><strong>Name:</strong>Mohini Bhosale</P>
     <p><strong>Mobile No:</strong>9156 760 711</p>
-    <p><strong>Email:mohinikirank22@gmailcom</strong></p>
+    <p><strong>Email:mohinikirank22@gmail.com</strong></p>
 <p><strong>Date of Birth:</strong>07-11-1996</p>
 <p><strong>Address:</strong>Ashok Brindavan Nagar,iyyapanthangal,Chennai</p>
 <details>
-    <summary> Family Details</summary>
-    <ul>
+    <summary id="subtitle">Family Details</summary>
+    <ul id="listSummary">
         <li>Father Name:Laxman Bhosale</li>
-        <li>Mother Name:Rupali bhosale</li>
+        <li>Mother Name:Rupali Bhosale</li>
     </ul>
 </details>
       </section>
       <hr>
       <!-- others -->
       <section id="others">
-        <h2>Hobbies:</h2>
-    <ul>
+        <h2 id="subtitle">Hobbies:</h2>
+    <ul id="listSummary">
         <li>Reading</li>
         <li>Travelling</li>
         <li>cooking</li>
     </ul>
-    <h2>Personal Strenght:</h2>
-    <ul>
+    <h2 id="subtitle">Personal Strength:</h2>
+    <ul id="listSummary">
         <li>Positive attitude</li>
         <li>Adaptive</li>
         <li>Good Interpersonal skills</li>
@@ -243,7 +268,7 @@
     <a href="https://www.linkedin.com/login"><span class="media"><i class="fa fa-linkedin" aria-hidden="true"></i></span></a>
     <a href="https://www.instagram.com/?hl=en" target="_blank"><span class="media"><i class="fa fa-instagram" aria-hidden="true"></i></span></a>
     </footer>
-    <section>
+    <section id="Copyright">
       <!-- Copy write section -->
       Copyright ©copy;2024 Mohini Bhosale Video Communications, Inc. All rights reserved.
     </section>
