@@ -73,6 +73,21 @@
 #listSummary,#Copyright{
 font-family: "Poppins", sans-serif;
 }
+#listSummary li{
+  list-style-type: none;
+}
+#listSummary li::marker{
+        content: "✍️";
+      }
+.roles{
+  list-style-type: lower-alpha;
+}
+  .roles li{
+    padding-top: 8px;
+  }
+  #projectdesc::selection{
+    background-color: coral;
+  }
     </style>
   </head>
   <body>
@@ -174,10 +189,10 @@ font-family: "Poppins", sans-serif;
         <p><strong>Name: <span id="project-txt"><u>Student Management</u></strong></span></p>
         <p><strong><u>Environment:</u></strong> <span id="project-txt">Angular,React,Java,Javascript,HTML,CSS,Bootstrap,,GitHub,Agile and JIRA </span></p>
         <p><strong>Team Size:</strong> 06 <span id="project-txt"><strong>Duration:</strong><i>2021-1 <sup>st</sup>-July till <u>present</i></u> </span></p>
-         <p><strong>Project Description:</strong> This project is mainly used for student management in colleges,where it helps to manage student record like<br>student registrtion,student update and to see all the list of academic activities like score card and attendance</p>
+         <p id="projectdesc"><strong>Project Description:</strong> This project is mainly used for student management in colleges,where it helps to manage student record like<br>student registrtion,student update and to see all the list of academic activities like score card and attendance</p>
         
          <h2 id="subtitle"> Roles and Responsibilities</h2>
-         <ul id="listSummary">
+         <ul class="roles">
         <li>Designed and Implemented the user interface using HTML5 and CSS3 </li>
         <li>Work closely with backend developers for code integration </li>
         <li>Identifying and troubleshooting issues in front end codebase </li>
