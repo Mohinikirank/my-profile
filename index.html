@@ -7,88 +7,9 @@
     <link rel="shortcut icon" href="mk.png" type="image/x-icon">
     <!-- CDN Link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Google Font Family -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <style>
-      header{
-        padding: 20px;
-        background-color: rgb(216, 244, 245);
-        font-family: "Roboto", sans-serif;
-      }
-      nav{
-        margin: 10px;
-        font-family: "Roboto", sans-serif;
-
-      }
-      li{
-        padding: 9px;
-      }
-      p{
-        font-family: "Poppins", sans-serif; 
-      }
-      td,th{
-         padding: 15px;
-      }
-      table, tr, th, td {
-        border: 2px solid rgb(216, 186, 131);
-        border-collapse: collapse;
-      }
-      #resume{
-        color: orange;
-        font-weight: bolder;
-      }
-      .heading{
-        color: cadetblue;
-        font-style: italic;
-        font-family: "Roboto", sans-serif;
-      }
-      #subtitle{
-        font-family: "Roboto", sans-serif;
-      }
-      .header-info{
-        margin-right: 40px;
-        margin-left: 10px;
-      }
-      #resume-text{
-        margin-left: 10px;
-      }
-      #nav-txt{
-        margin-left: 10px;
-        padding: 5px; 
-      }
-      #project-txt{
-        padding: 30px;
-        margin: 20px;
-      }
-      .media{
-        margin: 10px;
-        padding: 5px; 
-      }
-      #techTable{
-     width: 50%;
-     font-family: "Poppins", sans-serif;
-}
-#listSummary,#Copyright{
-font-family: "Poppins", sans-serif;
-}
-#listSummary li{
-  list-style-type: none;
-}
-#listSummary li::marker{
-        content: "✍️";
-      }
-.roles{
-  list-style-type: lower-alpha;
-}
-  .roles li{
-    padding-top: 8px;
-  }
-  #projectdesc::selection{
-    background-color: coral;
-  }
-    </style>
+       <!-- External css -->
+    <link rel="stylesheet" href="style.css">
+    
   </head>
   <body>
     <!-- Header Section -->
@@ -101,20 +22,20 @@ font-family: "Poppins", sans-serif;
       <span class="header-info">mohinikirank22@gmail.com </span> 
       <a href="assets/kirancv24 (2).pdf" download id="resume">  <i class="fa fa-download fa-lg" aria-hidden="true"></i> <span id="resume-text">RESUME</span>  </a>        
 </header>
-
-
-    <!-- Navigation Section -->
-    <nav>
-      <a href="#home"> <span id="nav-txt">HOME </span></a> 
-      <a href="#techStack"><span id="nav-txt">TECH STACK</span></a> 
-      <a href="#project"><span id="nav-txt"> PROJECTS</span></a> 
-      <a href="#education"> <span id="nav-txt">EDUCATION</span></a> 
-      <a href="personalDetails.html" target="_blank"> <span id="nav-txt">PERSONAL DETAILS</span></a>
-      <a href="others.html" target="_blank"><span id="nav-txt">OTHERS</span></a>
-    </nav>
-
+<!-- Navigation Section -->
+<nav id="navSection">
+  <ul>
+    <li><a href="#home">HOME</a></li>
+    <li><a href="#techStack">TECH STACK</a></li>
+    <li><a href="#project">PROJECTS</a></li>
+    <li><a href="#education">EDUCATION</a></li>
+    <li><a href="personalDetail.html" target="_blank">PERSONAL DETAILS</a></li>
+    <li><a href="others.html" target="_blank">OTHERS</a></li>
+  </ul>
+</nav>
+  
     <!-- Main Section -->
-  <section>
+  <section id="container">
       <!-- HOME Section -->
       <section id="home">
         <h2 class="heading">Professional Summary</h2>
