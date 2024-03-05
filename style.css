@@ -32,8 +32,8 @@
       /* Container Section */
       #container{
         font-size: medium;
-        width: 800px;
-        margin:20px auto;
+        width: 100%;
+        margin:20px 8px;
       }
       td,th{
          padding: 15px;
@@ -47,7 +47,7 @@
         font-weight: bolder;
       }
       .heading{
-        margin: 5px;
+        margin: 8px;
         color: cadetblue;
         font-style: italic;
         font-family: "Roboto", sans-serif;
@@ -109,9 +109,11 @@ font-family: "Poppins", sans-serif;
 #listSummary li::marker{
         content: "✍️  ";
       }
-
+.roles li{
+    font-family: "Poppins", sans-serif;
+    
+}
   .roles li::marker{
-    margin-left: 10px;
     content: "✧ ";
   }
   #projectdesc::selection{
