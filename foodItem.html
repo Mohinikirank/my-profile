@@ -23,15 +23,27 @@
         
     }
     .item-text{
-        padding: 8px; 
+        text-align:left;
+        padding: 5px; 
     }
     #bs-button{
-        color: cadetblue;
-        border-radius: 20px;
+        color: rgb(168, 38, 224);
+        border-radius: 12px;
+        font-size: medium;
         border: 2px solid orangered;
-        padding:  5px 15px;
-        bottom: 220px;
+        padding:  7px 12px;
+        bottom: 240px;
         left: 20px;
+        position: relative;
+    }
+    #mt-button{
+        color:rgb(180, 15, 15);
+        border-radius: 10px;
+        font-size: medium;
+        border: 2px solid rgb(49, 47, 47);
+        padding: 9px 12px;
+        bottom: 60px;
+        left: 180px;
         position: relative;
     }
     </style>
@@ -42,6 +54,7 @@
         <section class="card">
             <img id="item-photo" src="https://source.unsplash.com/1600x1000/?burger">
             <button type="button" id="bs-button"> Best Seller </button>
+            <button type="button" id="mt-button">Must Try</button>
             <section class="item-text">
                 <h2> Veg Supreme Burger </h2>
                 <p> Lorem ipsum dolor sit amet consectetur adipisicing. </p>
